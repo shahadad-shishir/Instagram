@@ -1,0 +1,85 @@
+.header-container{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid #ddd;
+    padding: 0 16px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-logo{
+    width: 103px;
+    height: 29px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.header-left svg{
+    margin-left: 8px;
+    margin-bottom: 2px;
+    cursor: pointer;
+
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-right input{
+    height: 34px;
+    width: 206px;
+    background-color: rgb(239, 239, 239);
+    padding-right: 16px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+.header-right input::placeholder{
+    font-size: 15px;
+    color: rgb(115, 115, 115);
+}
+.search-icon{
+    background-color: rgb(239, 239, 239);
+    padding:6.5px 16px ;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    color: rgb(142, 142, 142);
+
+}
+.search-icon svg{
+    height: 16px;
+    width: 16px;
+}
+.header-right svg{
+    margin-top: 3px;
+    transition: transform .3s; 
+    cursor: pointer;
+}
+.header-right svg:hover{
+    transform: scale(1.05);
+}
+.header-notifications{
+    position: relative;
+}
+.header-noti-dot{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(255, 48, 64);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    top: 2px;
+    right: -2px;
+}

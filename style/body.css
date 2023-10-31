@@ -1,0 +1,382 @@
+.body-container{
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  margin-top: 16px;
+  background-color: rgb(255, 255, 255);
+}
+.post-area{
+    height: 400px;
+    position:relative;
+}
+.stories-container{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.story{
+    height: 95px;
+    width: 70px;
+    margin-right: 6px;
+    margin-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+.right-arrow1, .right-arrow2{
+    width: 45px;
+    height: 45px;
+    background-image: url(/icons/icons.png);
+    background-size: 553px 528px;
+    background-position: -291px -269px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5px;
+    top: 16px;
+}
+.right-arrow2{
+    width: 45px;
+    height: 45px;
+    background-image: url(/icons/icons.png);
+    background-size: 553px 528px;
+    background-position: -291px -269px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+}
+
+.post-container{
+    margin-top: 150px;
+}
+.account-area{
+    display: flex;
+    flex-direction: column;
+    padding-left: 64px;
+    width: 287px;
+    margin-top: 14px;
+}
+.unseen-story{
+    width: 66px;
+    height: 65.5px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border-radius: 33.25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seen-story{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1.5px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.story img{
+    width: 56px;
+    height: 56px;
+    border-radius: 29px;
+    border: 2px solid white;
+}
+.story-user{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 7px;
+    white-space: nowrap; 
+    width: 59px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icon{
+    height: 60px;
+}
+.post-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.post{
+    width: 468px;
+}
+.post-top-area{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.post-top-left{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.post-top-right{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.more img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    opacity: 1;
+}
+.more img:hover{
+   opacity: 0.5;
+}
+.more-tooltip{
+    background-color: white;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 5px 7px;
+    position: absolute;
+    right: -85px;
+    top: 35px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.more:hover .more-tooltip{
+    opacity: 1;
+}
+.post-user-pp-unseen{
+    width: 41px;
+    height: 41px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    border-radius: 20.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.post-user-pp-seen{
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid #cccccc;
+    border-radius: 19.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.post-user-pp-unseen img, .post-user-pp-seen img{
+    width: 32px;
+    height: 32px;
+    border-radius: 17.5px;
+    border: 2px solid white;
+}
+.post-user-name{
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.post-user-name:hover{
+    color: rgb(115, 115 ,115);
+}
+.post-time{
+    color: rgb(115, 115, 115);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+.post-date{
+    background-color: white;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 5px 7px;
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.post-time:hover .post-date{
+    opacity: 1!important;
+}
+.post-pic {
+    width: 100%;
+    height: 585px;
+}
+.pic{
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+}
+.post-bottom-area{
+    width: 100%;
+    display: flex;
+    margin-top: 14px;
+}
+.post-bottom-left{
+    width: 90%;
+}
+.react span{
+    margin-right: 16px;
+    cursor: pointer;
+}
+.like-and-comment{
+    font-size: 14px;
+    margin-top: 8px;
+}
+.caption {
+    font-size: 14px;
+    margin-top: 8px;
+}
+.caption span{
+    font-weight: 500;
+    cursor: pointer;
+}
+.react span:hover, .save-icon:hover, .emoji-icon:hover{
+    color: rgb(115, 115, 115);
+}
+.post-bottom-right{
+    width: 10%;
+}
+.save-icon{
+    margin: 24px;
+    cursor: pointer;
+}
+.comment-area{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    border-bottom: 1px solid #cccccc ;
+    padding-bottom: 15px;
+}
+.comment-box{
+    width: 90%;
+    height: 18px;
+    font-size: 14px;
+    border: none;   
+}
+.comment-box::placeholder{
+    font-size: 14px;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+  }
+.emoji-icon{
+    width: 10%;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.emoji-icon svg{
+    padding-left: 34px;
+}
+.current-user, .other-users-id{
+    width: 287px;
+    display: flex;
+    justify-content: space-between;
+}
+.current-user-pp, .other-users-pp{
+    width: 44px;
+    height: 44px;
+    border: .5px solid #cccccc;
+    border-radius: 22.5px;
+    object-fit: cover;
+    object-position: center;   
+    margin-right: 10px;
+}
+.current-left, .other-id-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.current-user-name p{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.original-name{
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+    font-weight: 400 !important;
+}
+.current-right, .other-id-right{
+    display: flex;
+    align-items: center;
+}
+.current-right span, .other-id-right span{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(0, 149, 249);
+    cursor: pointer;
+}
+.current-right:hover span, .other-id-right:hover span{
+    color: rgb(115, 115, 115)
+}
+.suggested{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    margin-bottom: 15px;
+}
+.suggested-left{
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+    font-weight: 500;
+}
+.suggested-right{
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.suggested-right:hover{
+    opacity: 0.8;
+}
+.other-users-id{
+    margin-bottom: 18px;
+}
+.current-user-name{
+    font-size: 14px;
+}
+.id{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.followed-by{
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+}
+.important-links{
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(199, 199, 199);
+}
+.important-links a{
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+}
+.important-links a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(199, 199, 199);
+}

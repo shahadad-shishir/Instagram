@@ -1,0 +1,78 @@
+@media (max-width:1159px) {
+    .body-container{
+        grid-template-columns: 1fr;
+    }
+    .account-area{
+        display: none! important;
+    }
+ }
+ /* Sidebar responsive */
+ @media (max-width:679px) {
+    .stories-container{
+        justify-content: start;
+    }
+    body{
+        overflow-x: hidden;
+    }
+ }
+ @media (max-width:767px) {
+    .sidebar{
+        display: none;
+    }
+    .right-arrow1{
+        display: none;
+    }
+    body{
+        padding-top: 0px;
+    }
+    .body-container{
+        margin-top: 76px;
+    }
+ }
+ @media (min-width:768px) {
+    .right-arrow2{
+        display: none;
+    }  
+    .bottom-sidebar{
+        display: none;
+    }
+    .header-container{
+        display: none;
+    }
+    .body-container{
+        margin-top: 16px;
+    }
+ }
+ @media (min-width:768px) and (max-width:1263px){
+    .body-container{
+        margin-left: 72px;
+    }
+    .link-name{
+        display: none;
+    }
+    .sidebar-link{
+        justify-content: center;
+    }
+    .text-logo{
+        display: none;
+    }
+    .sidebar{
+        width: 48px;
+    }
+    .account-area{
+        padding-left: 37px;
+    }
+ }
+ @media (min-width:1264px) {
+    .insta-logo{
+        display: none;
+    }
+    .body-container{
+        padding-left: 280px;
+    }
+ }
+@media (min-width:1160px) {
+    .stories-container{
+        padding: 0 px;
+    }
+}

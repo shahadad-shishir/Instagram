@@ -1,0 +1,101 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    padding: 8px 12px 20px 12px;
+    border-right: 1px solid #cccccc;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+.sidebar-link{
+    padding: 12px 12px;
+    margin: 6px 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;  
+    font-weight: 400;
+    transition: background-color .15s, border-radious 0.15s;
+}
+.sidebar-logo, .sidebar-profile{
+    width: 24px;
+    height: 24px;
+}
+.link-name{
+    padding-left: 16px;
+}
+.insta-logo{
+    transition: background-color .15s, border-radious 0.15s;
+}
+.sidebar-link:hover, .insta-logo:hover{
+    background-color: #F2F2F2;
+    border-radius: 8px;
+}
+.sidebar-logo svg, .sidebar-profile img, .insta-logo svg{
+    transition: transform .3s; 
+}
+.sidebar-link:hover .sidebar-logo svg, .sidebar-link:hover .sidebar-profile img, .insta-logo:hover svg{
+    transform: scale(1.05);
+}
+.sidebar-name-bold{
+    font-weight: 700 !important;
+}
+.sidebar-profile img{
+    width: 24px;
+    height: 24px;
+    border-radius: 12.5px;
+    border: .5px solid #cccccc;
+}
+.text-logo{
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;  
+}
+.text-logo img{
+    width: 103px;
+    height: 29px;
+    cursor: pointer;
+}
+.insta-logo{
+    padding: 12px;
+    margin-top: 16px;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.direct{
+    position: relative;
+}
+.direct-count{
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: 0.5px solid #FECBCF;
+    background-color: #FF3040;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 100;
+}
+.noti-dot-container{
+    position: relative;
+}
+.noti-dot{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(255, 48, 64);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
